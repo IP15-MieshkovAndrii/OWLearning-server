@@ -12,7 +12,7 @@ fastify.register(fastifyCookie, {
 
 
 fastify.register(cors, {
-    origin: 'http://localhost:3000',
+    origin: 'https://owlearning-client.onrender.com',
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     allowedHeaders: ['Origin', 'X-Requested-With', 'Accept', 'Content-Type', 'Authorization'],
     credentials: true 
