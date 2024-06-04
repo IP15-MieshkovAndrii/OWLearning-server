@@ -11,7 +11,7 @@ const sendToken = (user, statusCode, reply) => {
 
     const accessOptions = {
         path: '/',
-        domain: 'localhost',
+        domain: 'owlearning-server.onrender.com',
         expires: new Date(Date.now() + process.env.ACCESS_EXPIRES),
         httpOnly: false,
         sameSite: "Strict",
@@ -20,7 +20,7 @@ const sendToken = (user, statusCode, reply) => {
 
     const refreshOptions = {
         path: '/',
-        domain: 'localhost',
+        domain: 'owlearning-server.onrender.com',
         expires: new Date(Date.now() + process.env.REFRESH_EXPIRES),
         httpOnly: false,
         sameSite: "Strict",
