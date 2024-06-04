@@ -26,7 +26,7 @@ fastify.register(require('./routes/courses'), { prefix: '/api' });
 
 const start = async () => {
     try {
-        await fastify.listen(process.env.PORT, () => {
+        await fastify.listen(process.env.PORT, '0.0.0.0', () => {
             console.log(`Server is connected with port ${process.env.PORT}`)
             connectDB()
         })
@@ -37,8 +37,5 @@ const start = async () => {
 }
 
 start()
-
-
-
 
 
