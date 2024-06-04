@@ -10,8 +10,7 @@
   "scripts": {
     "start": "node build/server.js",
     "dev": "nodemon server.js",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false",
-    "build": "babel server.js -d dist"
+    "build": "npm install"
   },
   "keywords": [],
   "author": "",
